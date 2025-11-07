@@ -83,17 +83,17 @@
     },
     "configs": {
       "locked": {
-        "lastModified": 1762091691,
-        "narHash": "sha256-E9kBJgnWQfPYPDBShyavOuAqxupYNBIlMiWcRja8n/0=",
-        "owner": "invra",
+        "lastModified": 1762295715,
+        "narHash": "sha256-qcL5ABwAJ+Z8GGgygVnikkJrKPF1GvEWtjP8NQuf0NM=",
+        "owner": "playfairs",
         "repo": "nix-conf",
-        "rev": "3d054f77de19e227e52d57d8d7cf4da20a5fdd7b",
-        "type": "gitlab"
+        "rev": "cca725260b0fea2eb3dd90aed7facb52216a3e03",
+        "type": "github"
       },
       "original": {
-        "owner": "invra",
+        "owner": "playfairs",
         "repo": "nix-conf",
-        "type": "gitlab"
+        "type": "github"
       }
     },
     "damage-control": {

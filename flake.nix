@@ -38,7 +38,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    configs.url = "gitlab:invra/nix-conf";
+    configs.url = "github:playfairs/nix-conf";
   };
 
   outputs =
