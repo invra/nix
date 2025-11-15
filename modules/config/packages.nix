@@ -18,7 +18,6 @@
         git
         helix
         home-manager
-        wev
       ]
       ++ lib.optionals linux [
         ghostty
@@ -26,10 +25,6 @@
         pciutils
         xwayland-satellite
         swww
-        brave
-        electron
-        whatsapp-electron
-        hyprshot
       ];
   }
   // lib.optionalAttrs linux {

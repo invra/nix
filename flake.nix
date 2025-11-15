@@ -1,8 +1,5 @@
 {
-  nixConfig = {
-    extra-experimental-features = [ "pipe-operators" ];
-    allowUnfree = true;
-  };
+  nixConfig.extra-experimental-features = [ "pipe-operators" ];
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -63,9 +60,7 @@
               "aarch64-linux"
             else
               "aarch64-darwin";
-          pkgs = import nixpkgs {
-            inherit system;
-          };
+          pkgs = import nixpkgs { inherit system; };
           custils = import ./utils {
             inherit (nixpkgs) lib;
             inherit pkgs flakeInputs flakeConfig;
@@ -77,13 +72,7 @@
           homeConfigurations.${name} = mkHomeConfig system;
         }
         // (lib.optionalAttrs (lib.strings.hasSuffix "linux" system) {
-          nixosConfigurations.${name} = mkNixConfig system // {
-            modules = [
-              {
-                nixpkgs.config.allowUnfree = true;
-              }
-            ];
-          };
+          nixosConfigurations.${name} = mkNixConfig system;
         })
         // (lib.optionalAttrs (lib.strings.hasSuffix "darwin" system) {
           darwinConfigurations.${name} = mkDarwinConfig system;
