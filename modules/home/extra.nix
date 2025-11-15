@@ -38,7 +38,6 @@
       iina
       ani-cli
       nasm
-      bitwarden-desktop
     ]
     ++ lib.optionals pkgs.stdenv.isLinux [
       wl-clipboard
