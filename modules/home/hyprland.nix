@@ -106,6 +106,8 @@ lib.optionalAttrs linux {
           else
             "${config.home.homeDirectory}/.nix-profile/bin/discord"
         }"
+        " , 107, exec, ${pkgs.hyprshot}/bin/hyprshot -m region --clipboard-only"
+        " , print, exec, notify-send 'Print pressed'"
         "SUPER, V, exec, clipman pick -t rofi"
         "SUPER, B, exec, ${pkgs.zen}/bin/zen"
         "SUPER, Q, killactive"

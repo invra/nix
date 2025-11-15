@@ -6,6 +6,8 @@
   home.packages =
     with pkgs;
     [
+      ani-cli
+      vlc
       dbgate
       # prismlauncher
       viu
@@ -25,6 +27,7 @@
       uutils-findutils
       uutils-coreutils-noprefix
       steam
+      whatsapp-electron
     ]
     ++ lib.optionals (!(stdenv.isLinux && stdenv.isAarch64)) [
       insomnia
