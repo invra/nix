@@ -15,7 +15,7 @@
       macos-titlebar-style = "hidden";
       quit-after-last-window-closed = true;
       window-save-state = "never";
-      font-size = 13;
+      font-size = 11;
       cursor-style = "bar";
     };
   };
