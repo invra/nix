@@ -52,7 +52,7 @@
       $env.LS_COLORS = (${pkgs.vivid}/bin/vivid generate rose-pine)
 
       if not ("NU_EXISTING_INSTANCE" in $env) {
-        ${pkgs.fastfetch}/bin/fastfetch
+          ${pkgs.fastfetch}/bin/fastfetch
       }
 
       $env.NU_EXISTING_INSTANCE = true
