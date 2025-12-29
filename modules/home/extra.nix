@@ -43,6 +43,7 @@
       alacritty
       neovim
       zed-editor
+      ffmpeg
     ]
     ++ lib.optionals pkgs.stdenv.isLinux [
       wl-clipboard
