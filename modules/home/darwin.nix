@@ -100,6 +100,6 @@ lib.optionalAttrs (!linux) {
 
   programs.setWallpaper = {
     enable = true;
-    wallpaperPath = flakeConfig.user.wallpaper or ../../wallpapers/macos.jpg;
+    wallpaperPath = flakeConfig.user.wallpaper or ../../wallpapers/m3.jpg;
   };
 }
