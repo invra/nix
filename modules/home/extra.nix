@@ -44,6 +44,7 @@
       neovim
       zed-editor
       ffmpeg
+      pgadmin4
     ]
     ++ lib.optionals pkgs.stdenv.isLinux [
       wl-clipboard
